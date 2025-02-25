@@ -12,10 +12,17 @@ int  main(){
      double pib= 699.28 ;
      int ponto_turisticos= 27;
 
-     
+     printf("digite a carta:")
+     scanf("%d", &carta);
+     printf("a carta é: %d\n",carta);
 
+     printf("digite o estado:");
+     scanf("%s" , &estado);
+     printf("o estado é: %S\n", estado);
 
-
+     printf(" digite o codigo:");
+     scanf("%d" &codigo);
+     printf("o codigo é: %d\n" ,codigo);
 
 
 
