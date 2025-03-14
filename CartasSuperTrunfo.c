@@ -4,51 +4,37 @@ int main() {
     printf("Desafio Super Trunfo!\n");
     printf("Novo commit\n");
 
-    char estado[20]= "ceara";
-    char codigo[10]= "a01";
-    char cidade[20] = "fortaleza";
-    int populacao = 125000;  
-    float area_em_km2 = 2500.45;  
-    float pib = 699.28;
-    int pontos_turisticos = 27;
+    char estado1[20] = "SP";
+    char estado2[20] = "RJ";
+    char codigo1[10] = "a01";
+    char codigo2[10] = "a02";
+    char cidade1[20] = "sao paulo";
+    char cidade2[20] = "sao paulo";
+    int populacao1 = 125000;  
+    int populacao2 = 123000;  
+    float area_em_km2_1 = 2500.45;
+    float area_em_km2_2 = 2300.45;   
+    float pib1 = 699.28;
+    float pib2 = 690.28;
+    int pontos_turisticos1 = 27;
+    int pontos_turisticos2 = 20;
+    float densidade_populacional1 = populacao1 / area_em_km2_1;
+    float pib_percapita1 = pib1 / populacao1;
+    float densidade_populacional2 = populacao2 / area_em_km2_2;
+    float pib_percapita2 = pib2 / populacao2;
 
-    printf("Digite o estado: ");
-    scanf("%s", estado);  
-    printf("O estado é: %s\n", estado);
+    
+    printf("Densidade populacional: %.2f habitantes/km²\n", densidade_populacional1);
+    printf("PIB per capita: %.2f\n", pib_percapita1);
 
-    printf("Digite o código: ");
-    scanf("%s", codigo);
-    printf("O código é: %s\n", codigo);
+    
+    printf("Densidade populacional: %.2f habitantes/km²\n", densidade_populacional2);
+    printf("PIB per capita: %.2f\n", pib_percapita2);
 
-    printf("Digite a cidade: ");
-    scanf("%s", cidade);
-    printf("A cidade é: %s\n", cidade);
 
-    printf("Digite a população: ");
-    scanf("%d", &populacao);  
-    printf("A população é: %d\n", populacao);
+    
 
-    printf("digite a area em km²: ");
-    scanf("%f", &area_em_km2);
-    printf("a area em km² é: %f\n", area_em_km2);
 
-    printf("digite o pib: ");
-    scanf("%f", &pib) ;
-    printf("o pib é: %f\n", pib);
-
-    printf("digite os pontos turisticos: ");
-    scanf("%d", &pontos_turisticos);
-    printf("os pontos turisticos sao: %d\n", pontos_turisticos);
 
     return 0;
-
-
-
-    }
-
-
-
-
-
-
-
+}
